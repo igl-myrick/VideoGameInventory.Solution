@@ -1,0 +1,11 @@
+@{
+  Layout = "_Layout";
+}
+
+@model VideoGameInventory.Models.Game
+
+<h2>Game Details</h2>
+<hr>
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayNameFor(model => model.Console): @Html.DisplayFor(model => model.Console)</h3>
+<p>@Html.ActionLink("Back to list", "Index")</p>
